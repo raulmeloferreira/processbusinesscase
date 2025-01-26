@@ -17,7 +17,7 @@ A análise considera critérios como custo de licença, custo de infraestrutura,
 Selecionar e implementar uma solução para orquestração de processos _stateful_ que:
 
 *   Substitua o **Camunda 7 Community Edition** por uma solução mais robusta e moderna.
-*   Atenda ao volume estimado de **10 mil operações mensais** de forma estável e eficiente, com base no processo **XXX de Câmbio (BOL)**.
+*   Atenda ao volume estimado de **10 mil operações mensais** de forma estável e eficiente, com base no processo **XXX de XXXX (XXX)**.
 *   Ofereça escalabilidade para demandas futuras.
 *   Simplifique a integração entre sistemas internos e externos.
 *   Alinhe-se à estratégia organizacional de modernização tecnológica e otimização de processos.
