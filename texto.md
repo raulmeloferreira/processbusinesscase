@@ -304,15 +304,28 @@ Serviços AWS necessários para executar o Processo  Piloto no Step Functions. *
   - Dependência significativa da AWS, resultando em vendor lock-in.
   - Aumento de custos devido à necessidade de serviços adicionais para implementar gaps funcionais.
 
+---
+
+## **6\. Comparativo de Custos**
+
+| **Tipo de Custo**                | **Camunda 8**                            | **AWS Step Functions**                | **Bamoe**              |
+|----------------------------------|------------------------------------------|----------------------------------------|-------------------------|
+| **Infraestrutura**               | **$253,22/mês**                          | **$66,96/mês**                        | (Aguardando dados)      |
+| **Licença**                      | (Aguardando dados)                       | **N/A (pay-as-you-go)**               | (Aguardando dados)      |
+| **Construção de Arquitetura**    | (Aguardando dados)                       | (Aguardando dados)                     | (Aguardando dados)      |
+| **Migração do Processo Piloto**  | (Aguardando dados)                       | (Aguardando dados)                     | (Aguardando dados)      |
+| **Manutenção**                   | (Aguardando dados)                       | (Aguardando dados)                     | (Aguardando dados)      |
+| **Total**                        | **$253,22/mês + licença e custos adicionais** | **$66,96/mês + custos adicionais**    | (Aguardando dados)      |
+
 
 ---
 
-## **6\. Recomendação**
+## **7\. Recomendação**
 
 Após análise detalhada, recomenda-se a migração para o **Camunda 8**, devido à sua arquitetura _cloud-native_, escalabilidade robusta e suporte completo ao BPMN. Embora o custo inicial de tempo e infraestrutura seja maior em comparação a outras opções, a solução atende melhor aos objetivos estratégicos da organização.
 
 ---
 
-## **7\. Conclusão**
+## **8\. Conclusão**
 
 O Camunda 8 é a melhor alternativa para substituir o Camunda 7 Community Edition, proporcionando escalabilidade, modernização tecnológica e alinhamento com as metas organizacionais de expansão e eficiência operacional.
