@@ -150,6 +150,32 @@ Serviços AWS necessários para deploy de uma solução Camunda.
 
 **Custo Mensal Estimado de Infraestrutura:** **$253,22.**
 
+
+ATUALIZADA
+
+| **Serviço**                 | **Configuração**                                  | **Custo Unitário (USD/hora)** | **Horas/Mês** | **Custo Mensal (USD)** | **Link de Referência**                                                                                 |
+|-----------------------------|--------------------------------------------------|-------------------------------|----------------|-------------------------|---------------------------------------------------------------------------------------------------------|
+| **Amazon EKS Cluster**      | 1 cluster                                        | $0,10                         | 730            | $73,00                 | [AWS EKS Pricing](https://aws.amazon.com/eks/pricing/)                                                 |
+| **Amazon EC2 (Worker Nodes)** | 3 instâncias t3.medium                          | $0,0416                       | 730            | $91,10                 | [AWS EC2 Pricing](https://aws.amazon.com/ec2/pricing/on-demand/)                                       |
+| **Amazon RDS**              | db.t3.medium, 5 GB armazenamento                | $0,0416                       | 730            | $30,37                 | [AWS RDS Pricing](https://aws.amazon.com/rds/pricing/)                                                 |
+| **ElasticSearch (OpenSearch)** | OpenSearch t3.medium, 20 GB armazenamento      | $0,0976                       | 730            | $71,30                 | [AWS OpenSearch Pricing](https://aws.amazon.com/elasticsearch-service/pricing/)                        |
+| **Armazenamento EBS**       | 20 GB por nó (3 nós)                             | $0,10 por GB/mês              | N/A            | $6,00                  | [AWS EBS Pricing](https://aws.amazon.com/ebs/pricing/)                                                 |
+| **Application Load Balancer** | Balanceador para tráfego externo                | ~$0,025                       | 730            | $18,25                 | [AWS ALB Pricing](https://aws.amazon.com/elasticloadbalancing/pricing/)                                |
+| **Transferência de Dados**  | 100 GB/mês                                       | $0,09 por GB                  | N/A            | $9,00                  | [AWS Data Transfer Pricing](https://aws.amazon.com/blogs/containers/understanding-data-transfer-costs-for-aws-container-services/) |
+| **CloudWatch Logs e Métricas** | Logs e monitoramento básico                    | ~$0,50/GB de logs             | N/A            | $5,00                  | [AWS CloudWatch Pricing](https://aws.amazon.com/cloudwatch/pricing/)                                   |
+| **ElastiCache (opcional)**  | Redis ou Memcached (pequeno)                     | ~$0,020                       | 730            | $15,00                 | [AWS ElastiCache Pricing](https://aws.amazon.com/elasticache/pricing/)                                 |
+| **Certificados SSL (ACM)**  | HTTPS/TLS para comunicação segura                | Gratuito                      | N/A            | $0,00                  | [AWS ACM Pricing](https://aws.amazon.com/certificate-manager/pricing/)                                 |
+| **Zeebe Broker**            | Motor de orquestração de workflows               | Incluído no EC2               | N/A            | $0,00                  | Parte dos recursos alocados nos nós EC2.                                                                                                     |
+| **Zeebe Gateway**           | Interface entre clientes e o Zeebe Broker        | Incluído no EC2               | N/A            | $0,00                  | Necessário para gerenciar as solicitações de workflows.                                                                                       |
+| **Operate**                 | Monitoramento e gestão de workflows              | Incluído no EC2               | N/A            | $0,00                  | Incluído no cluster EKS, usado para monitorar e operar processos.                                                                             |
+| **Tasklist**                | Interface para gerenciar tarefas humanas         | Incluído no EC2               | N/A            | $0,00                  | Parte dos serviços hospedados no cluster.                                                                                                    |
+| **Identity**                | Gerenciamento de autenticação e autorização      | Incluído no EC2               | N/A            | $0,00                  | Necessário para controle de acesso do sistema.                                                                                                |
+
+**Custo Mensal Estimado de Infraestrutura:** **$319,02**
+
+
+
+
 **3\. Custo de Construção de Arquitetura de Referência**
 
 | **Nível do Profissional** | **Esforço em Horas** | **Custo Estimado (Reais)** |
