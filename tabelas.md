@@ -1,3 +1,5 @@
+camunda 7 e 8
+
 | **Categoria**                | **Camunda 7** | **Camunda 8** | **Diferença Prática (Gap)** |
 |------------------------------|--------------|--------------|------------------------------|
 | **Arquitetura** | Monolítica, baseada em banco de dados | Cloud-native, baseada no Zeebe (event-driven) | O Camunda 8 foi projetado para nuvem e não depende de um banco relacional para persistência. |
@@ -19,6 +21,8 @@
 | **Preço e Licenciamento** | Open-source (Community Edition) e Enterprise | Modelo SaaS pago, mas com versão auto-hospedada | O Camunda 8 é mais orientado a um modelo de assinatura, enquanto o Camunda 7 pode ser usado gratuitamente. |
 
 
+camunda 7 e step function
+
 
 | **Categoria** | **Camunda 7** | **AWS Step Functions** | **Diferença Prática (Gap)** |
 |--------------|--------------|------------------|------------------------------|
@@ -37,3 +41,39 @@
 | **Integração com Microservices** | Sim, via REST e Java API | Sim, via AWS Lambda, API Gateway, DynamoDB, SQS, SNS, etc. | O Step Functions tem integração nativa com o ecossistema AWS. |
 | **APIs** | REST e Java API | REST, SDKs AWS (Python, Node.js, Java, etc.) | O Step Functions é otimizado para serviços AWS e APIs modernas. |
 | **Preço e Licenciamento** | Open-source (Community Edition) e Enterprise | Modelo pay-per-use (custo por transição) | O Camunda 7 pode ser gratuito, enquanto o Step Functions cobra por execução de estados e transições. |
+
+
+# 💰 Cálculo de Custos AWS com Resiliência para Camunda 8
+
+## 📊 **Tabela Atualizada com Resiliência**
+
+| **Serviço**                 | **Configuração Resiliente**                         | **Custo Unitário (USD/hora)** | **Horas/Mês** | **Custo Mensal (USD)** |
+|-----------------------------|--------------------------------------------------|-------------------------------|----------------|-------------------------|
+| **Amazon EKS Cluster**      | 1 cluster resiliente em Multi-AZ                 | $0,10                         | 730            | $73,00                 |
+| **Amazon EC2 (Worker Nodes)** | 3-5 instâncias t3.medium com Auto Scaling       | $0,0416 (médio: 4 nós)        | 730            | **$121,47**              |
+| **Amazon RDS (PostgreSQL)**  | db.t3.medium Multi-AZ                           | $0,0416 x2                     | 730            | **$60,74**               |
+| **OpenSearch (ElasticSearch)** | OpenSearch t3.medium Multi-AZ, 20 GB armazenamento | $0,0976 x2                     | 730            | **$142,60**              |
+| **Armazenamento EBS**       | 20 GB por nó (3 nós) + snapshots                 | $0,10 por GB/mês              | N/A            | **$10,00**               |
+| **Application Load Balancer** | ALB externo + NLB interno                       | ~$0,025 x2                     | 730            | **$36,50**               |
+| **Transferência de Dados**  | 100 GB/mês                                       | $0,09 por GB                  | N/A            | **$9,00**                |
+| **CloudWatch Logs e Métricas** | Logs + 7 dias retenção                          | ~$0,50/GB de logs             | N/A            | **$10,00**               |
+| **ElastiCache (opcional)**  | Redis/Memcached Multi-AZ                         | ~$0,020 x2                     | 730            | **$30,00**               |
+| **Certificados SSL (ACM)**  | HTTPS/TLS para comunicação segura                | Gratuito                      | N/A            | $0,00                   |
+
+---
+
+## 💰 **Custo Mensal Estimado Após Resiliência**
+- **Antes:** **$319,02/mês**  
+- **Agora:** **$493,31/mês** *(Aumento de $174,29 para alta disponibilidade e recuperação de falhas)*.
+
+---
+
+## 🔹 **Resumo das Melhorias**
+- ✅ **RDS Multi-AZ** para failover automático.  
+- ✅ **Auto Scaling no EKS** para flexibilidade.  
+- ✅ **ElasticSearch replicado** para garantir continuidade.  
+- ✅ **NLB interno** para balanceamento eficiente.  
+- ✅ **Backups diários e retenção** no CloudWatch e EBS.  
+
+Isso assegura **alta disponibilidade**, **recuperação de falhas** e **escalabilidade automática** para lidar com picos. 🚀
+
