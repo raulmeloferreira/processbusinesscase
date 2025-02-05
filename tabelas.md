@@ -77,3 +77,34 @@ camunda 7 e step function
 
 Isso assegura **alta disponibilidade**, **recuperação de falhas** e **escalabilidade automática** para lidar com picos. 🚀
 
+
+
+
+
+-------
+
+# 💰 Cálculo de Custos AWS com Resiliência para Apache Camel
+
+## 📊 Infraestrutura AWS para Apache Camel (Resiliente)
+
+| **Serviço**                  | **Configuração Resiliente**                           | **Custo Unitário (USD/hora)** | **Horas/Mês** | **Custo Mensal (USD)** |
+|------------------------------|--------------------------------------------------|-------------------------|-----------|------------------|
+| **Amazon EKS Cluster**       | 1 cluster Multi-AZ                             | $0,10                   | 730       | **$73,00**      |
+| **Amazon EC2 (Worker Nodes)** | 3-5 instâncias t3.medium (Auto Scaling)       | $0,0416                 | 730       | **$121,47**     |
+| **Amazon RDS (PostgreSQL)**   | db.t3.medium Multi-AZ                         | $0,0416 x2              | 730       | **$60,74**      |
+| **Armazenamento EBS**         | 20 GB por nó (3 nós) + Snapshots               | $0,10 por GB/mês        | N/A       | **$10,00**      |
+| **Amazon MQ (ActiveMQ/RabbitMQ)** | Cluster Multi-AZ para filas e mensagens | $0,057                  | 730       | **$41,61**      |
+| **Amazon S3 (Armazenamento de Logs)** | 50 GB de retenção de eventos        | $0,023 por GB/mês       | N/A       | **$1,15**       |
+| **Application Load Balancer** | ALB externo + NLB interno                      | ~$0,025 x2              | 730       | **$36,50**      |
+| **Transferência de Dados**    | 100 GB/mês                                    | $0,09 por GB            | N/A       | **$9,00**       |
+| **CloudWatch Logs e Métricas** | Logs + 7 dias retenção                        | ~$0,50/GB de logs       | N/A       | **$10,00**      |
+| **ElastiCache (opcional)**    | Redis/Memcached Multi-AZ                       | ~$0,020 x2              | 730       | **$30,00**      |
+| **Certificados SSL (ACM)**    | HTTPS/TLS para comunicação segura              | Gratuito                | N/A       | **$0,00**       |
+
+---
+
+## 💰 **Custo Total Estimado: $393,47/mês**  
+
+Essa infraestrutura foi projetada para **alta disponibilidade, resiliência e escalabilidade**, garantindo **10.000 operações/mês** no **Apache Camel** dentro do **EKS**. 🚀
+
+
