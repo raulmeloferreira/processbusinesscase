@@ -1,0 +1,32 @@
+Claro, vamos revisar os valores considerando as diferentes moedas e convertê-los para reais (R$) com base nas cotações atuais. As cotações de hoje são:
+	•	Dólar (USD) para Real (BRL): 1 USD = R$ 6,0691  ￼
+	•	Euro (EUR) para Real (BRL): 1 EUR = R$ 5,9942  ￼
+
+Custos de Migração (Único):
+	•	Camunda 8:
+	•	Construção de Arquitetura: R$ 542.064,00
+	•	Migração Processo Piloto: R$ 161.811,20
+	•	Total: R$ 703.875,20
+	•	AWS Step Functions + Apache Camel:
+	•	Construção de Arquitetura: R$ 813.096,00
+	•	Migração Processo Piloto: R$ 233.440,00
+	•	Total: R$ 1.046.536,00
+
+Custos Recorrentes (Anuais):
+	•	Camunda 8:
+	•	Infraestrutura: R$ 1.818.414,00
+	•	Licença: € 593.400,00 x R$ 5,9942 = R$ 3.556.519,48
+	•	Total: R$ 5.374.933,48
+	•	AWS Step Functions + Apache Camel:
+	•	Infraestrutura: $ 412,28/mês x 12 meses x R$ 6,0691 = R$ 30.048,80
+	•	Total: R$ 30.048,80
+
+Análise Comparativa:
+	•	Economia Anual ao Migrar para AWS: R$ 5.374.933,48 (Camunda 8) - R$ 30.048,80 (AWS) = R$ 5.344.884,68
+	•	Tempo para Compensação do Investimento: R$ 1.046.536,00 (Custo de Migração para AWS) / R$ 5.344.884,68 (Economia Anual) ≈ 0,196 anos (aproximadamente 2 meses e 11 dias)
+
+Conclusão:
+
+Migrar para AWS Step Functions + Apache Camel apresenta uma economia anual significativa em comparação com o Camunda 8. O investimento inicial na migração seria recuperado em cerca de 2 meses e 11 dias, tornando a migração financeiramente vantajosa em um curto período.
+
+Observação: Os valores foram convertidos para reais utilizando as cotações atuais do dólar e do euro. As cotações podem variar, o que pode impactar nos cálculos apresentados.
