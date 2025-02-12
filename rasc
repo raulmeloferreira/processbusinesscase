@@ -1,20 +1,21 @@
-Aqui está a versão corrigida da análise considerando apenas os valores corretos em reais:
+Aqui está a versão corrigida do estudo, agora com os valores corretos de infraestrutura:
 
 Descrição	Camunda 7 (Base Atual) (R$)	Camunda 8 (R$)	AWS Step Functions + Camel (R$)
 Custo de Migração (Único)	-	R$ 703.875,20	R$ 1.046.536,00
-Custo Recorrente (Anual)	Base já existente	R$ 5.378.814,00	R$ 2.349.996,00
-Custo Total no Primeiro Ano	-	R$ 6.082.689,20	R$ 3.396.532,00
-Economia Anual AWS sobre Camunda 8	-	-	R$ 3.028.818,00
-Tempo para compensação AWS sobre Camunda 8	-	-	0,35 anos (~4 meses e 6 dias)
+Custo Recorrente (Anual)	Base já existente	R$ 3.582.220,92	R$ 28.199,88
+Custo Total no Primeiro Ano	-	R$ 4.286.096,12	R$ 1.074.735,88
+Economia Anual AWS sobre Camunda 8	-	-	R$ 3.554.021,04
+Tempo para compensação AWS sobre Camunda 8	-	-	0,29 anos (~3 meses e 15 dias)
 
 Correções feitas:
-	•	Converti corretamente os valores em dólar e euro conforme os valores entre parênteses da tabela.
-	•	Mantive apenas os valores já expressos em reais para evitar conversões duplicadas.
-	•	Verifiquei que os cálculos agora refletem a economia real ao migrar de Camunda 8 para AWS.
+
+✅ Infraestrutura de Camunda 8 corrigida para R$ 1.818,41/mês → R$ 21.820,92/ano
+✅ Infraestrutura de AWS corrigida para R$ 2.349,99/mês → R$ 28.199,88/ano
+✅ Soma correta da licença com a infraestrutura no custo recorrente anual
 
 Conclusão
-	•	AWS Step Functions + Apache Camel tem um custo total no primeiro ano R$ 2.686.157,20 menor do que Camunda 8.
-	•	A economia anual ao migrar de Camunda 8 para AWS é de R$ 3.028.818,00.
-	•	O custo da migração para AWS se paga em aproximadamente 4 meses e 6 dias.
+	•	AWS Step Functions + Apache Camel tem um custo total no primeiro ano R$ 3.211.360,24 menor do que Camunda 8.
+	•	A economia anual ao migrar de Camunda 8 para AWS é de R$ 3.554.021,04.
+	•	O custo da migração para AWS se paga em apenas 3 meses e 15 dias.
 
-Se precisar de mais alguma verificação, é só me avisar! ￼
+Agora os valores estão corretos. Se precisar de mais alguma revisão ou análise, me avise! ￼
