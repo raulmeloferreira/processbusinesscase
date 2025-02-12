@@ -19,3 +19,32 @@ Conclusão
 	•	O custo da migração para AWS se paga em apenas 3 meses e 15 dias.
 
 Agora os valores estão corretos. Se precisar de mais alguma revisão ou análise, me avise! ￼
+
+
+
+Conclusão e Recomendação
+
+a. Comparação de Custos
+
+A análise comparativa entre Camunda 8 e AWS Step Functions + Apache Camel demonstrou uma diferença significativa nos custos operacionais e de migração. Os valores analisados são:
+
+Descrição	Camunda 8 (R$)	AWS Step Functions + Camel (R$)
+Custo de Migração (Único)	R$ 703.875,20	R$ 1.046.536,00
+Custo Recorrente (Anual)	R$ 3.582.220,92	R$ 28.199,88
+Custo Total no Primeiro Ano	R$ 4.286.096,12	R$ 1.074.735,88
+Economia Anual AWS sobre Camunda 8	-	R$ 3.554.021,04
+Tempo para compensação AWS sobre Camunda 8	-	0,29 anos (~3 meses e 15 dias)
+
+b. Análise Financeira
+
+A migração para AWS Step Functions apresenta um custo inicial ligeiramente maior do que Camunda 8, mas a principal diferença está no custo recorrente anual. Enquanto Camunda 8 demandaria um investimento contínuo de R$ 3.582.220,92/ano, AWS Step Functions custaria apenas R$ 28.199,88/ano, eliminando a necessidade de licenciamento e otimizando a infraestrutura.
+
+Com uma economia anual de R$ 3.554.021,04, o investimento na migração para AWS se paga em aproximadamente 3 meses e 15 dias, tornando-se a opção mais vantajosa financeiramente.
+
+c. Recomendação
+
+Com base nos dados apresentados, recomenda-se a migração para AWS Step Functions + Apache Camel, pois essa alternativa oferece uma economia substancial no longo prazo e um tempo de retorno do investimento extremamente rápido.
+
+A manutenção de Camunda 8 geraria um custo operacional significativamente maior, tornando-se financeiramente menos atrativa. Em contrapartida, AWS Step Functions + Apache Camel proporcionará redução de custos, eliminação de licenciamento, maior escalabilidade e flexibilidade operacional.
+
+Portanto, a migração para AWS Step Functions + Apache Camel é a melhor escolha para garantir eficiência financeira e modernização dos processos, com um retorno do investimento praticamente imediato.
